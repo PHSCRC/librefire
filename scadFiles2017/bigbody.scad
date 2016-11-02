@@ -10,41 +10,35 @@ use <shortestir.scad>
 
 module body(){
     difference(){
-       cube([240, 150, 150], center = true);
+       cube([250, 230, 200], center = true);
         translate([0, 0, 15]){
-            cube([210, 130, 130.01], center = true);
+            cube([220, 200, 185.01], center = true);
         }
         translate([113, 0, 20]){
-            cube([25,100,120], center = true);
+            cube([25,175,165], center = true);
         }
-        translate([0, 55, -27]){
+        translate([20, 95, -56]){
             rotate([0, 0, 90]){
                 #nema17();
                 #shaft();  
             }
         }
-        translate([0,-55,-27]){
+        translate([20,-95,-56]){
             rotate([0, 0, -90]){
                 #nema17();
                 #shaft();  
             }
         }
         translate([0,0,107]){
-           // #handle();
+            #handle();
         }
-        translate([90,0,-80]){
+        translate([-60,0,-90]){
             cylinder(20.1, d = 22.1, center = true);
-            translate([0,0,0]){
+            translate([0,0,-6]){
                 #ballcaster();
             }
         }
-        translate([-90,0,-80]){
-            cylinder(20.1, d = 22.1, center = true);
-            translate([0,0,0]){
-                #ballcaster();
-            }
-        }
-        translate([20,0,-61]){
+        translate([20,0,-90]){
             #cube([20,20,30], center = true);
         }
         translate([120, 110,-50]){
@@ -70,15 +64,15 @@ module body(){
     }
 
     difference(){
-        translate([-90,-0,15]){
-            cube([30,100,130], center = true);
+        translate([-100,-0,7.5]){
+            cube([30,100,185], center = true);
         }
-        translate([-55 , -0, -5]){
-            #3sliposlide();
+        translate([-65 , -0, -5]){
+            3sliposlide();
         }
-        translate([-95, 0, 60.1]){
+        translate([-105, 0, 70.1]){
             rotate([0,0,90]){
-                pilipo();
+                #pilipo();
             }
             
         }
@@ -86,24 +80,24 @@ module body(){
         
     }
     difference(){
-        translate([80,-60, 10]){
-            cube([80, 20, 130], center = true);
+        translate([-60,-90, 7.5]){
+            cube([100, 20, 185], center = true);
         }
 
-        translate([80, -60, 45.1]){
+        translate([-60, -90, 70.1]){
             #pilipo();
         }
 
         
     }
-    translate([50,-30,-0]){
+    translate([-65,0,-0]){
         rotate([0,0,0]){
             difference(){
         
-                translate([20,90, 10]){
-                    cube([90, 20, 130], center = true);
+                translate([5,90, 7.5]){
+                    cube([100, 20, 185], center = true);
                 }
-                translate([120, 123, 30.1]){
+                translate([105, 123, 50.1]){
                     #pislide();
                 }
 
