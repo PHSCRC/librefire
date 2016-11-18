@@ -29,8 +29,8 @@ module body(){
                 #shaft();  
             }
         }
-        translate([0,0,107]){
-           // #handle();
+        translate([0,0,68]){
+           handle();
         }
         translate([90,0,-80]){
             cylinder(20.1, d = 22.1, center = true);

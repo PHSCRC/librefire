@@ -1,6 +1,6 @@
 module handle(){
     handlebase();
-    handletop();
+//    handletop();
 }
 module handlebase(){
     difference(){
@@ -8,8 +8,8 @@ module handlebase(){
 //            translate([-120,0,-10]){
 //                cube([10, 230, 10],center = true);
 //            }
-            translate([85,-0,0]){
-                cube([50, 230, 15], center = true);
+            translate([0,-0,0]){
+                cube([50, 151, 15], center = true);
                 handlebaseslide();
             }
         }
@@ -21,25 +21,25 @@ module handlebase(){
 module handletop(){
 
         union(){
-            translate([-17.5,0,50]){
-                cube([215, 60, 10],center = true);
+            translate([-55,0,52]){
+                cube([120, 60, 10],center = true);
             }
-            translate([85,0,25]){
+            translate([0,0,27.5]){
                 cube([10,60,40],center = true);
             }
-            translate([-120,0,25]){
-                cube([10,60,60],center = true);
+            translate([-110,0,30]){
+                cube([10,60,46],center = true);
             }
-            translate([85,-20,4]){
+            translate([0,-20,7]){
                 cylinder(8, d = 8, center = true);
             }
-            translate([85,20,4]){
+            translate([0,20,7]){
                 cylinder(8, d = 8, center = true);
             }   
-            translate([-120, 20,-8]){
+            translate([-110, 20,3]){
                 cylinder(8, d = 8, center = true);
             }
-            translate([-120, -20, -8]){
+            translate([-110, -20, 3]){
                 cylinder(8, d = 8, center = true);
             }               
         }
@@ -50,12 +50,12 @@ module handlebaseslide(){
         translate([0, 0, -25]){
             rotate([90,90,0]){
                 rotate([0,0,30]){
-                    cylinder(230, d = 50, center = true, $fn = 6);
+                    cylinder(151, d = 50, center = true, $fn = 6);
                 }
             }
         }
         translate([0,0,-35]){
-            cube([50,231, 35], center = true);
+            cube([50,152, 35], center = true);
         }
     }
 }
