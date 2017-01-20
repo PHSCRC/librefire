@@ -45,7 +45,7 @@ module body(){
             }
         }
         translate([20,0,-61]){
-            #cube([20,20,30], center = true);
+           #cube([20,20,30], center = true);
         }
         translate([120, 110,-50]){
             rotate([-45,90,0]){
@@ -78,7 +78,7 @@ module body(){
         }
         translate([-95, 0, 60.1]){
             rotate([0,0,90]){
-                pilipo();
+                #pilipo();
             }
             
         }
@@ -104,7 +104,7 @@ module body(){
                     cube([90, 20, 130], center = true);
                 }
                 translate([120, 123, 30.1]){
-                    #pislide();
+                    pislide();
                 }
 
             

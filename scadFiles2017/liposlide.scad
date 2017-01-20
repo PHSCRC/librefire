@@ -18,7 +18,7 @@ module 3sliposlide(){
     }
 
 }
-module slide(   eight){
+module slide(height){
     rotate([0, 0, -30]){
         difference(){
             cylinder(height, d = 100, center= true);
