@@ -5,7 +5,7 @@ use <handle.scad>
 use <longir.scad>
 use <shortir.scad>
 use <shortestir.scad>
-
+use <dcmotor.scad>
 
 
 module body(){
@@ -17,20 +17,18 @@ module body(){
         translate([113, 0, 20]){
             cube([25,100,120], center = true);
         }
-        translate([0, 55, -27]){
+        translate([0, 45, -50]){
             rotate([0, 0, 90]){
-                #nema17();
-                #shaft();  
+                #dcmotor();  
             }
         }
-        translate([0,-55,-27]){
+        translate([0,-45,-50]){
             rotate([0, 0, -90]){
-                #nema17();
-                #shaft();  
+                #dcmotor();  
             }
         }
         translate([0,0,68]){
-           handle();
+           #handle();
         }
         translate([90,0,-80]){
             cylinder(20.1, d = 22.1, center = true);

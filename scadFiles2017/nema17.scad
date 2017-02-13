@@ -44,7 +44,7 @@ module shaft(){
         translate([32.5, 0, 0]){
             rotate([0, 90, 0]){
                 translate([0, 0, -13]){
-                    cylinder(2,d=22, center = true);
+                    #cylinder(6,d=22, center = true);
                 }
                 cylinder(26, d = 5, center = true);
             }

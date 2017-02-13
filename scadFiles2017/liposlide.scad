@@ -4,11 +4,11 @@ module 3sliposlide(){
     translate([0, 0, 20]){
         rotate([0, 90, 0]){
             difference(){
-                cube([141, 90, 40], center = true);
-                translate([5.55, 0, 0]){
-                    cube([140, 79, 31], center = true);
+                cube([141, 50, 35], center = true);
+                translate([11, 0, 0]){
+                    #cube([120, 35, 25], center = true);
                 }
-            }    
+            }
         }
     }
     translate([-60,0,20]){
@@ -22,14 +22,14 @@ module slide(height){
     rotate([0, 0, -30]){
         difference(){
             cylinder(height, d = 100, center= true);
-            
+
                 rotate([0,0, 30]){
                     translate([20, 0, 0]){
-                        cube([100, 100, height+1], center = true);                    
+                        cube([100, 100, height+1], center = true);
                     }
-    
+
                 }
-    
+
         }
     }
 }
